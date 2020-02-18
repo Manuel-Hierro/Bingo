@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bingo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bingo.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+</head>
+
+<body>
+    <div id="contenedor_izq">
+        <div id="contenedor">
+            <img class="bingo" src="img/bingo.png">
+            <div id="contenedor_formulario">
+                <div class="jugadores">
+                    <label for="jugadores">Jugadores</label>
+                    <input type="number" placeholder="5" min="5" max="20" value="5" name="jugadores"
+                        id="jugadores_input" required>
+                </div>
+                <div class="euros">
+                    <label for="euros">Apuesta</label>
+                    <select id="euros">
+                        <option value="1">1 €</option>
+                        <option value="2">2 €</option>
+                        <option value="3">3 €</option>
+                        <option value="4">4 €</option>
+                        <option value="5">5 €</option>
+                    </select>
+                </div>
+                <div class="milisegundos">
+                    <label for="milisegundos">Velocidad</label>
+                    <select id="milisegundos">
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                        <option value="2000">2000</option>
+                        <option value="3000">3000</option>
+                        <option value="4000">4000</option>
+                        <option value="5000">5000</option>
+                    </select>
+                </div>
+                <button id="boton_formulario">Iniciar</button>
+                <button id="boton_formulario" onClick="location.reload()">Reiniciar</button>
+            </div>
+        </div>
+        <div>
+            <table id="tabla_numeros" hidden></table>
+        </div>
+    </div>
+    <div id="contenedor_der">
+
+    </div>
+</body>
+
+</html>
