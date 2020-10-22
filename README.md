@@ -1,2 +1,2 @@
 # Bingo
-Practica de jQuery 2º Evaluacion de Cliente
+Juego de Bingo en JavaScript con jQuery
